@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story Telling</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Story Telling</h1>
+        <button id="openModalButton">Buat Postingan</button>
+        
+        <!-- Modal untuk membuat postingan -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2>Buat Postingan</h2>
+                <input type="text" id="usernameInput" placeholder="Masukkan nama Anda" required>
+                <textarea id="storyInput" placeholder="Tulis ceritamu di sini..." required></textarea>
+                <button onclick="addStory()">Unggah</button>
+            </div>
+        </div>
+
+        <div id="storyList" class="story-list">
+            <!-- Postingan akan muncul di sini -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

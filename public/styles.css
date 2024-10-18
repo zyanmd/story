@@ -1,0 +1,134 @@
+/* Gaya umum */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; /* Sudut melengkung untuk kontainer */
+}
+
+h1 {
+    text-align: center;
+    color: #333; /* Teks lebih gelap untuk kontras */
+}
+
+button {
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px; /* Sudut melengkung untuk tombol */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transisi halus */
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Gaya modal */
+.modal {
+    display: none; /* Tersembunyi secara default */
+    position: fixed; /* Tetap di tempat */
+    z-index: 1; /* Di atas konten lainnya */
+    left: 0;
+    top: 0;
+    width: 100%; /* Lebar penuh */
+    height: 100%; /* Tinggi penuh */
+    overflow: auto; /* Aktifkan scroll jika diperlukan */
+    background-color: rgba(0, 0, 0, 0.6); /* Latar belakang hitam dengan opasitas */
+    animation: fadeIn 0.5s; /* Animasi masuk */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% dari atas dan terpusat */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Bisa lebih atau kurang, tergantung ukuran layar */
+    border-radius: 8px; /* Sudut melengkung */
+    transform: translateY(-30px); /* Posisi awal untuk animasi */
+    animation: slideIn 0.5s forwards; /* Animasi masuk */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Animasi untuk modal */
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Mulai dari transparan */
+    }
+    to {
+        opacity: 1; /* Akhirnya penuh */
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-30px); /* Masuk dari atas */
+        opacity: 0; /* Mulai dari transparan */
+    }
+    to {
+        transform: translateY(0); /* Berhenti di posisi normal */
+        opacity: 1; /* Akhirnya penuh */
+    }
+}
+
+/* Gaya daftar cerita */
+.story-list {
+    margin-top: 20px;
+}
+
+.story {
+    background: #f8f9fa;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.story h4 {
+    margin: 0 0 10px; /* Ruang di bawah nama pengguna */
+    color: #333; /* Teks lebih gelap untuk nama pengguna */
+}
+
+.story p {
+    margin: 0;
+    color: #555; /* Warna teks lebih lembut */
+}
+
+.story button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 4px; /* Sudut melengkung untuk tombol hapus */
+    cursor: pointer;
+}
+
+.story button:hover {
+    background: #c82333;
+}

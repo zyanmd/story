@@ -1,0 +1,11 @@
+{
+  "name": "story-telling",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "json-server": "^0.17.3"
+  },
+  "scripts": {
+    "start": "json-server --watch db.json"
+  }
+}

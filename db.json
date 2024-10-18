@@ -1,0 +1,16 @@
+{
+    "stories": [
+        {
+            "id": 1678825600000,
+            "content": "Ini adalah cerita pertama saya",
+            "username": "JohnDoe",
+            "ip": "192.168.1.1"
+        },
+        {
+            "id": 1678825660000,
+            "content": "Ini adalah cerita lain",
+            "username": "JaneSmith",
+            "ip": "192.168.1.2"
+        }
+    ]
+}
