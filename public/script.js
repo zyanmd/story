@@ -1,4 +1,4 @@
-const apiUrl = 'https://<your-vercel-app>.vercel.app/api/stories';
+const apiUrl = 'https://story-phi.vercel.app//api/stories';
 
 // Fungsi untuk membuka modal
 function openModal() {
